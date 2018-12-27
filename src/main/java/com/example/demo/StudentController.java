@@ -11,6 +11,8 @@ public class StudentController {
 	public String getInfo() {
 
 		System.out.println(" dfsdafkdjsaj");
+		System.out.println(" dfsdafkdjsaj");
+		System.out.println(" dfsdafkdjsaj");
 		return "Pawan Sharma";
 	}
 	
