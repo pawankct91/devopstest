@@ -27,6 +27,7 @@ sonarqube {
 		property "sonar.projectKey", "org.sonarqube:devopstest"
 		property "sonar.sourceEncoding", "UTF-8"
 		property "sonar.sources", "src"
+		property "sonar.exclusions", "**/test/**"
 	}
 }
 group = 'com.example'
