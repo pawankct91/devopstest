@@ -21,6 +21,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'org.sonarqube'
 
 sonarqube {
+	println("ffsadfs");
 	properties {
 		property "sonar.projectName", "project  display name"
 		property "sonar.sourceEncoding", "UTF-8"
