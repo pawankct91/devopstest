@@ -23,8 +23,10 @@ apply plugin: 'org.sonarqube'
 sonarqube {
 	println("ffsadfs");
 	properties {
-		property "sonar.projectName", "project  display name"
+		property "sonar.projectName", "demo"
+		property "sonar.projectKey", "org.sonarqube:devopstest"
 		property "sonar.sourceEncoding", "UTF-8"
+		property "sonar.sources", "src"
 	}
 }
 group = 'com.example'
