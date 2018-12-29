@@ -7,9 +7,9 @@ import java.util.Date;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		lass, args);
-		System.out.println(" = sada");
 		SpringApplication.run(DemoApplication.c
+				lass, args);
+		System.out.println(" = sada");
 	}
 
 }
