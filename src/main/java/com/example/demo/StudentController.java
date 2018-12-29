@@ -10,10 +10,8 @@ public class StudentController {
 	@GetMapping("/data")
 	public String getInfo() {
 
-		System.out.println(" dfsdafkdjsaj");
-		System.out.println(" dfsdafkdjsaj");
-		System.out.println(" dfsdafkdjsaj");
-		System.out.println(" fdsafsa");
+
+
 		return "Pawan Sharma";
 	}
 	
