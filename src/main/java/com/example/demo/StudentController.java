@@ -7,12 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 
 
-	@GetMapping("/data")
+	@GetMapping("/test")
 	public String getInfo() {
-
-
-
-		return "Pawan Sharma";
+		return "sample dataß";
 	}
 	
 
