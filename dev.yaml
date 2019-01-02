@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: pawankct91/pawankct91/dev-fedora:${BUILD_NUMBER}"
+        image: pawankct91/dev-fedora:latest"
         ports:
         - containerPort: 80
 ---
