@@ -19,7 +19,7 @@ spec:
       - name: nginx
         image: pawankct91/dev-fedora
         ports:
-        - containerPort: 8080
+        - containerPort: 8053
 ---
 kind: Service
 apiVersion: v1
@@ -32,7 +32,7 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      targetPort: 8080
+      targetPort: 8053
       nodePort: 30001
   type: NodePort
 ---
