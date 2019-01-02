@@ -8,7 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(DemoApplication.class);
-		app.setDefaultProperties(Collections
+		app.setDefaultProperties(java.util.Collections
 				.singletonMap("server.port", "8080"));
 		app.run(args);
 	}
