@@ -12,11 +12,8 @@ spec:
     spec:
       containers:
       - name: ssm-dep
-        image: reg-dhc.app.corpintra.net/example/busybox:1.26
+        image: pawankct91/dev-fedora:${BUILD_NUMBER}
         imagePullPolicy: Always
-        securityContext:
-           runAsUser: 1000
-           runAsNonRoot: true
         ports:
         - containerPort: 8080
 ---
@@ -30,6 +27,8 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 8080
+    nodePort: 30001
+   type: NodePort
   selector:
     app: ssm-dep
 ---
