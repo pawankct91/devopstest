@@ -1,34 +1,38 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ssm-dep
+  name: nginx-deployment
   namespace: ssm
+  labels:
+    app: nginx
 spec:
-  replicas: 1
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
   template:
     metadata:
       labels:
-        app: ssm-dep
+        app: nginx
     spec:
       containers:
-      - name: ssm-dep
-        image: pawankct91/dev-fedora:${BUILD_NUMBER}
-        imagePullPolicy: Always
+      - name: nginx
+        image: pawankct91/pawankct91/dev-fedora:${BUILD_NUMBER}"
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 ---
-apiVersion: v1
 kind: Service
+apiVersion: v1
 metadata:
   name: ssm-service
   namespace: ssm
 spec:
-  ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 8080
-    nodePort: 30001
-   type: NodePort
   selector:
-    app: ssm-dep
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+      nodePort: 30001
+  type: NodePort
 ---
