@@ -9,7 +9,7 @@ public class StudentController {
 
 	@GetMapping("/test")
 	public String getInfo() {
-		return "sample dataß";
+		return "sample data";
 	}
 	
 
