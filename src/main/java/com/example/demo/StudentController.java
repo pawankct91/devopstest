@@ -9,7 +9,7 @@ public class StudentController {
 
 	@GetMapping("/test")
 	public String getInfo() {
-		System.out.println("truefdfdasfdsa";
+		System.out.println("truefdfdasfdsa");
 		return "sample data";
 	}
 	
