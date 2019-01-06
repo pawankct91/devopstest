@@ -19,7 +19,7 @@ spec:
       - name: nginx
         image: pawankct91/dev-ssm
         ports:
-        - containerPort: 8053
+        - containerPort: 8080
 ---
 kind: Service
 apiVersion: v1
@@ -32,7 +32,7 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      targetPort: 8053
+      targetPort: 8080
       nodePort: 30001
   type: NodePort
 ---

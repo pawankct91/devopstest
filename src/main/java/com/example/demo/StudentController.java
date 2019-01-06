@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 
 
-	@GetMapping("/test")
+		@GetMapping("/test")
 	public String getInfo() {
 		System.out.println("truefdfdasfdsa");
 		return "sample data";
